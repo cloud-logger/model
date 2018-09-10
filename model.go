@@ -21,14 +21,16 @@ import (
 const (
 	// RetryCount is used in a few hard-coded retries.
 	RetryCount = 3
+	// LevelCritical represents a log of 'critical' level.
+	LevelCritical = byte(0)
 	// LevelError represents a log of 'error' level.
-	LevelError = byte(0)
+	LevelError = byte(1)
 	// LevelWarn represents a log of 'warn' level.
-	LevelWarn = byte(1)
+	LevelWarn = byte(2)
 	// LevelInfo represents a log of 'info' level.
-	LevelInfo = byte(2)
+	LevelInfo = byte(3)
 	// LevelDebug represents a log of 'debug' level.
-	LevelDebug = byte(3)
+	LevelDebug = byte(4)
 	// TransportPackageTypeLog represents a package of type 'log'.
 	TransportPackageTypeLog = byte(0)
 	// TransportPackageTypeHiPriLog represents a package of type 'high priority log'.
